@@ -1,0 +1,176 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+
+.navbar-brand .logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  margin-top : 15px !important;
+  padding-top: 50px;
+}
+
+/* Navbar Styling */
+.navbar-nav .nav-link {
+  color: white !important;
+  transition: color 0.3s;
+  font-size: 22px;
+  border: 2px solid white;
+  padding:8px;
+  border-radius: 7px;
+  background-color: hwb(195 6% 7%);
+  margin:4px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 hwb(0 0% 90% / 0.679), 0 6px 20px 0 rgba(80, 72, 72, 0.19);
+}
+
+.navbar-nav .nav-link:hover {
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.04);
+}
+
+/* Image Slider Styling */
+.carousel-item {
+  height: 70vh;
+}
+
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Classes Section */
+.classes-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.class-box {
+  background-color: hwb(195 6% 7%);
+  padding: 7px;
+  margin: 6px;
+  border-radius: 10px;
+  color: hsl(0, 0%, 100%);
+  font-size: 1.8rem;
+  vertical-align: middle ;
+  height: 65PX;
+  box-shadow: 0 4px 8px 0 #b80a0a33, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.class-box:hover {
+  transform: scale(1.05);
+  background-color: #21065a;
+}
+
+/* About Us Section */
+.about-us-section{
+  background-color: rgb(5, 179, 232);
+  color: white;
+  padding: 6px 0;
+  max-width: 100%;
+  
+}
+.about-us-section .container
+{
+  max-width: 85%;
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 #b80a0a33, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+.about-us-section .container:hover{
+
+
+transition: transform 0.3s ease-in-out;
+  transform: scale(1.05);
+}
+.about-us-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.contact-us-section
+{
+  max-width: 600px;
+  text-align: left;
+  border: 3px solid rgb(5, 179, 232);
+  margin :10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 8px;
+}
+
+/* Contact Us Section */
+.contact-us-section h2 {
+  font-size: 2.0rem;
+  color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+}
+
+.contact-form .form-control {
+  border-radius: 5px;
+}
+
+.contact-form .btn-primary
+{
+
+  background-color:rgb(5, 179, 232) !important ;
+}
+.instagram
+  {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    
+  }
+  
+  
+
+  .social-icons {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+
+
+  .icon {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 5px 0;
+    background-color: #333;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 55px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    
+    
+  }
+  
+
+  .icon:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .facebook {
+    background-color: #3b5998;
+  }
+  
+  
+  .instagram {
+    background-color: #c13584;
+  }
+  
+  .youtube {
+    background-color: white;
+  }
