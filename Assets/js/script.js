@@ -193,3 +193,56 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
+// =========================================
+// REMOVE ACCIDENTAL "00" TEXT FROM FORM
+// =========================================
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const contactForm = document.getElementById("contactForm");
+
+    if (!contactForm) {
+        return;
+    }
+
+    function removeDoubleZeroText(rootElement) {
+
+        const walker = document.createTreeWalker(
+            rootElement,
+            NodeFilter.SHOW_TEXT
+        );
+
+        const nodesToRemove = [];
+
+        while (walker.nextNode()) {
+
+            const currentNode = walker.currentNode;
+
+            if (currentNode.textContent.trim() === "00") {
+                nodesToRemove.push(currentNode);
+            }
+
+        }
+
+        nodesToRemove.forEach(function (node) {
+            node.remove();
+        });
+
+    }
+
+    // Page load पर remove करें
+    removeDoubleZeroText(contactForm);
+
+    // किसी script से दोबारा add हो तो भी remove करें
+    const formObserver = new MutationObserver(function () {
+        removeDoubleZeroText(contactForm);
+    });
+
+    formObserver.observe(contactForm, {
+        childList: true,
+        subtree: true,
+        characterData: true
+    });
+
+});
