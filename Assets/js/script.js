@@ -175,3 +175,21 @@ ${enquiryMessage || "I want admission and demo class details."}
     });
 
 }
+document.addEventListener("DOMContentLoaded", function () {
+
+    const contactForm = document.getElementById("contactForm");
+
+    if (!contactForm) return;
+
+    Array.from(contactForm.childNodes).forEach(function (node) {
+
+        if (
+            node.nodeType === Node.TEXT_NODE &&
+            node.textContent.trim() === "00"
+        ) {
+            node.remove();
+        }
+
+    });
+
+});
