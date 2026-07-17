@@ -246,3 +246,42 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+// =========================================
+// TOP ACHIEVERS CAROUSEL
+// =========================================
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const topperCarouselElement =
+        document.getElementById("topperCarousel");
+
+    if (
+        !topperCarouselElement ||
+        typeof bootstrap === "undefined"
+    ) {
+        return;
+    }
+
+    // Duplicate instance हो तो पहले remove करें
+    const existingCarousel =
+        bootstrap.Carousel.getInstance(topperCarouselElement);
+
+    if (existingCarousel) {
+        existingCarousel.dispose();
+    }
+
+    const topperCarousel =
+        new bootstrap.Carousel(topperCarouselElement, {
+
+            interval: 3500,
+            ride: "carousel",
+            wrap: true,
+            pause: false,
+            touch: true,
+            keyboard: true
+
+        });
+
+    topperCarousel.cycle();
+
+});
