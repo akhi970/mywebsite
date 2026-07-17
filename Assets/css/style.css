@@ -2576,3 +2576,101 @@ svg{
     height:40px;
     object-fit:contain;
 }
+
+.contact-section,
+.contact-section .container,
+.contact-section .row,
+.contact-section [class*="col-"]{
+    min-width:0;
+    max-width:100%;
+}
+
+.admission-form-card{
+    width:100%;
+    max-width:100%;
+}
+
+.admission-form-card form,
+.admission-form-card .row{
+    width:100%;
+    max-width:100%;
+}
+
+.input-group-custom,
+.input-group-custom .form-control,
+.input-group-custom .form-select,
+.enquiry-textarea{
+    width:100%;
+    max-width:100%;
+    min-width:0;
+}
+
+@media(max-width:767px){
+
+    .contact-section{
+        overflow-x:hidden;
+    }
+
+    .contact-section .container{
+        width:100%;
+        max-width:100%;
+        padding-left:12px;
+        padding-right:12px;
+    }
+
+    .contact-section .row{
+        margin-left:0;
+        margin-right:0;
+    }
+
+    .contact-section [class*="col-"]{
+        padding-left:0;
+        padding-right:0;
+    }
+
+    .admission-form-card{
+        width:100%;
+        margin:0;
+        padding:25px 18px;
+        border-radius:20px;
+        overflow:hidden;
+    }
+
+    .form-heading h3{
+        font-size:34px;
+        line-height:1.18;
+    }
+
+    .form-heading p{
+        font-size:17px;
+        line-height:1.7;
+    }
+
+    .input-group-custom .form-control,
+    .input-group-custom .form-select{
+        min-height:56px;
+        padding-right:14px;
+        padding-left:48px;
+        font-size:15px;
+    }
+
+    .enquiry-textarea{
+        padding:14px;
+    }
+}
+
+@media(max-width:767px){
+
+    .floating-buttons{
+        right:8px;
+        bottom:18px;
+        gap:10px;
+        z-index:1040;
+    }
+
+    .float-btn{
+        width:48px;
+        height:48px;
+        font-size:20px;
+    }
+}
